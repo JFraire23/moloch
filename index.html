@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		ModMoloch
+	</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="cerveza guadalupe victoria, caguamas guadalupe victoria, cheves guadalupe victoria, cerveza, modelorama moloch, moloch">
+	<meta name="description" content="Modelorama Moloch la cerveza mas fría de Guadalupe Victoria">
+	<meta name="author" content="Jesús Fraire">
+	<meta name="copyright" content="Jesús Fraire">
+	<meta name="robots" content="index">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/390f0f7875.js" crossorigin="anonymous"></script>
+
+	<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@900&family=Kablammo&display=swap" rel="stylesheet">
+</head>
+<header class="encabezado">
+	<div class="encabezado-superior">
+		<div class="encabezado-superior-inicio">
+			<a href="index.html"><i class="fa-solid fa-house encabezado-superior-inicio-i"></i></a>
+			<a href="https://jfraire23.github.io/all-in-all/"> <img src="AIA48X48.png"></a>
+		</div>
+		<div class="encabezado-superior-titulo">
+			<div>
+				<img class="logo-moloch" src="logo-moloch.jpg">
+			</div>
+			<h1>MOLOCH A.C.</h1>
+			<p class="sub"></p>
+			<div class="subtitulos">
+		<p>Solo en Gpe. Victoria Horario: Lun-Sab 11am a 10pm, Dom 11am a 6pm</p>
+	</div>		
+		</div>
+		<div class="encabezado-superior-carrito">
+			<a class="boton-carrito" href="carrito.html">
+				<i class="fa-solid fa-cart-shopping encabezado-superior-carrito-i">
+					<div class="numero">
+						<span class="numero-carrito" id="numerito">0</span>
+					</div>
+				</i>
+			</a>
+
+		</div>
+		
+		
+	</div>
+
+	
+
+	
+<div class="contenedor-modales">
+	<div class="boton-modal">
+			<button class="btn-comprar">
+			<label for="btn-modal">
+				COMO COMPRAR
+			</label>
+			</button>
+	</div>
+	<!--
+	<div class="boton-modal-envios">
+			<button class="btn-comprar-envios">
+			<label for="btn-modal-envios">
+				CONSULTA ENVÍOS GRATIS
+			</label>
+			</button>
+	</div>
+	-->
+	<div class="boton-modal-envios-costos">
+			<button class="btn-comprar-envios-costos">
+			<label for="btn-modal-envios-costos">
+				COSTO DE ENVÍOS
+			</label>
+			</button>
+	</div>
+
+</div>
+	<div class="modal">
+		<input type="checkbox" id="btn-modal">
+		<div class="contenedor-modal">
+			<div class="content-modal">
+				<h2 id="abarrotes">Como Comprar</h2>
+
+				<video src="videovertical.mp4" controls width="100%" height="100px">
+					
+				</video>
+				<div class="btn-cerrar">
+					<label for="btn-modal">
+						Cerrar
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-envios">
+		<input type="checkbox" id="btn-modal-envios">
+		<div class="contenedor-modal-envios">
+			<div class="content-modal-envios">
+				<h2 id="abarrotes">Envios Gratis</h2>
+				<div class="content-modal-envios-scroll">
+					
+						<p>Envíos Gratis!! en zona centro Guadalupe Victoria</p>
+						<li>Envios gratis a Pino Suarez, J. Gpe. Rodriguez, Felipe Carrillo Puerto, Antonio Amaro, 2 de Abril, Cuahutemoc, La Purisima y ramon Corona solo haz tu pedido el día Lunes y te entregamos en Martes completamente gratis y además pagas al recibir!</li>
+						<li>Envios gratis a Pino Suarez con compra a partir de : $699.00</li>
+						<li>Envios gratis a Pino Suarez, J. Gpe. Rodriguez, Felipe Carrillo Puerto, Antonio Amaro, 2 de Abril, Cuahutemoc, La Purisima y ramon Corona solo haz tu pedido el día Lunes y te entregamos en Martes completamente gratis y además pagas al recibir!</li>
+						<li>Envios gratis a Pino Suarez con compra a partir de : $699.00</li>
+						<li>Envios gratis a Pino Suarez, J. Gpe. Rodriguez, Felipe Carrillo Puerto, Antonio Amaro, 2 de Abril, Cuahutemoc, La Purisima y ramon Corona solo haz tu pedido el día Lunes y te entregamos en Martes completamente gratis y además pagas al recibir!</li>
+						<li>Envios gratis a Pino Suarez con compra a partir de : $699.00</li>
+					
+					
+				</div>
+				<div class="btn-cerrar-envios">
+					<label for="btn-modal-envios">
+						Cerrar
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal-envios-costos">
+		<input type="checkbox" id="btn-modal-envios-costos">
+		<div class="contenedor-modal-envios-costos">
+			<div class="content-modal-envios-costos">
+				<h2 id="abarrotes">Costos De Envios</h2>
+				<div class="content-modal-envios-scroll">
+					<li>Servicio Solo en Guadalupe Victoria</li>
+					<li>Costo de envío de tan solo $20.00 a cualquier lugar en Guadalupe Victoria.</li>		
+					
+					
+			</div>	
+				<div class="btn-cerrar-envios-costos">
+					<label for="btn-modal-envios-costos">
+						Cerrar
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="encabezado-4">
+		<div class="encabezado-4-departamentos">
+
+			<div class="contenedor-menu">
+				<button class="boton-encabezado-4-departamentos boton-clases boton-categorias active" id="todos" >TODO</button>
+			</div>
+
+			<div class="contenedor-menu">
+				<div class="contenedor-menu-scroll">
+					<button class="boton-encabezado-4-departamentos boton-clases boton-categorias " id="ofertas" >OFERTAS</button><!--
+					<p class="subtexto">(Todos acompañados de chilaquiles, frijoles y tortilla)</p>
+					<button class="boton-menu-platillo" >Estrellados </button>
+					<button class="boton-menu-platillo" >Con Jamón</button>
+					<button class="boton-menu-platillo" >Con Salchicha</button>
+					<button class="boton-menu-platillo" >Con Tocino</button>
+					<button class="boton-menu-platillo" >Omelette</button>
+					<button class="boton-menu-platillo" >En canasta</button>
+				-->
+				</div>
+			</div>
+
+			<div class="contenedor-menu">
+				<div class="contenedor-menu-scroll">
+					<button class="boton-encabezado-4-departamentos boton-clases boton-categorias " id="lo-mas-vendido" >LO_MÁS_VENDIDO</button><!--
+					<p class="subtexto">(Todos acompañados de chilaquiles, frijoles y tortilla)</p>
+					<button class="boton-menu-platillo" >Estrellados </button>
+					<button class="boton-menu-platillo" >Con Jamón</button>
+					<button class="boton-menu-platillo" >Con Salchicha</button>
+					<button class="boton-menu-platillo" >Con Tocino</button>
+					<button class="boton-menu-platillo" >Omelette</button>
+					<button class="boton-menu-platillo" >En canasta</button>
+				-->
+				</div>
+			</div>
+
+			<div class="contenedor-menu">
+				<div class="contenedor-menu-scroll">	
+					<button class="boton-encabezado-4-departamentos boton-clases boton-categorias" id="cerveza">CERVEZA</button>
+					<!--
+					<button class="boton-menu-platillo" >Rojos Dulces</button>
+					<button class="boton-menu-platillo" >Verdes</button>
+					<button class="boton-menu-platillo" >Chipotle</button>
+					<button class="boton-menu-platillo" >Cordon Blue</button>
+					-->
+					
+				</div>
+			</div>
+
+			<div class="contenedor-menu">
+				<div class="contenedor-menu-scroll">	
+					<button class="boton-encabezado-4-departamentos boton-clases boton-categorias" id="cigarros">CIGARROS</button>
+					<!--
+					<button class="boton-menu-platillo" >Moyete Completo</button>
+					<button class="boton-menu-platillo" >2 Hot Cake</button>
+					<button class="boton-menu-platillo" >Cielito Lindo</button>
+					<button class="boton-menu-platillo" >Sincronizada</button>
+					-->
+
+				</div>
+			</div>
+
+			<div class="contenedor-menu">
+				<div class="contenedor-menu-scroll">	
+					<button class="boton-encabezado-4-departamentos boton-clases boton-categorias" id="refrescos">REFRESCOS</button>
+					<!--
+					<button class="boton-menu-platillo" >Rojos Dulces</button>
+					<button class="boton-menu-platillo" >Verdes</button>
+					<button class="boton-menu-platillo" >Chipotle</button>
+					<button class="boton-menu-platillo" >Cordon Blue</button>
+					-->
+					
+				</div>
+			</div>
+
+			<div class="contenedor-menu">
+				<div class="contenedor-menu-scroll">	
+					<button class="boton-encabezado-4-departamentos boton-clases boton-categorias" id="bebidas-preparadas">BEBIDAS_PREPARADAS</button>
+					<!--
+					<button class="boton-menu-platillo" >Rojos Dulces</button>
+					<button class="boton-menu-platillo" >Verdes</button>
+					<button class="boton-menu-platillo" >Chipotle</button>
+					<button class="boton-menu-platillo" >Cordon Blue</button>
+					-->
+					
+				</div>
+			</div>
+			<div class="contenedor-menu">
+				<div class="contenedor-menu-scroll">	
+					<button class="boton-encabezado-4-departamentos boton-clases boton-categorias" id="micheladas">MICHELADAS</button>
+					<!--
+					<button class="boton-menu-platillo" >Moyete Completo</button>
+					<button class="boton-menu-platillo" >2 Hot Cake</button>
+					<button class="boton-menu-platillo" >Cielito Lindo</button>
+					<button class="boton-menu-platillo" >Sincronizada</button>
+					-->
+
+				</div>
+			</div>
+
+			<div class="contenedor-menu">
+				<div class="contenedor-menu-scroll">	
+					<button class="boton-encabezado-4-departamentos boton-clases boton-categorias" id="clamatos">CLAMATOS</button>
+					<!--
+					<button class="boton-menu-platillo" >Tradicional</button>
+					<button class="boton-menu-platillo" >Chispas de Chocolate</button>
+					<button class="boton-menu-platillo" >Mazapan</button>
+					<button class="boton-menu-platillo" >Cajeta Quemada</button>
+					<button class="boton-menu-platillo" >Helado y Fruta</button>
+					<button class="boton-menu-platillo" >Huevo, Tocino y Queso</button>
+					<button class="boton-menu-platillo" >Crema Batida y Chokis</button>
+					<button class="boton-menu-platillo" >Crema Batida y Fruta</button>
+					<button class="boton-menu-platillo" >Crema Batida, Chocolate y Helado</button>
+					<button class="boton-menu-platillo" >Omelette</button>
+					-->
+				</div>
+			</div>
+
+			<div class="contenedor-menu">
+				<div class="contenedor-menu-scroll">	
+					<button class="boton-encabezado-4-departamentos boton-clases boton-categorias" id="botanas">BOTANAS</button>
+					<!--
+					<button class="boton-menu-platillo" >Cupcake</button>
+					<button class="boton-menu-platillo" >Rebanada Pastel</button>
+					<button class="boton-menu-platillo" >Rebanada Pay</button>
+					<button class="boton-menu-platillo" >Galletas</button>					
+					-->
+				</div>
+			</div>
+
+			<div class="contenedor-menu">
+				<div class="contenedor-menu-scroll">
+					<button class="boton-encabezado-4-departamentos boton-clases boton-categorias" id="galletas">GALLETAS</button>
+					<!--
+					<button class="boton-menu-platillo" >Espresso</button>
+					<button class="boton-menu-platillo" >Americano</button>
+					<button class="boton-menu-platillo" >Café Vainilla</button>
+					<button class="boton-menu-platillo" >Café Mocha</button>
+					<button class="boton-menu-platillo" >Cappucino</button>
+					<button class="boton-menu-platillo" >Caramelo</button>
+					-->
+				</div>
+			</div>
+
+			<div class="contenedor-menu">
+				<div class="contenedor-menu-scroll">
+					<button class="boton-encabezado-4-departamentos boton-clases boton-categorias" id="dulces">DULCES</button>
+					<!--
+					<button class="boton-menu-platillo" >Té Manzana</button>
+					<button class="boton-menu-platillo" >Té Chai</button>
+					<button class="boton-menu-platillo" >Té Menta</button>
+					<button class="boton-menu-platillo" >Té Manzana 43</button>
+					-->
+				</div>
+			</div>
+
+		</div>
+	</div>	
+
+
+
+<!--
+	<div class="encabezado-3"> 
+		<div class="encabezado-3-areas">
+				<button class="boton-encabezado-3-areas boton-clases" id="aceites-comestibles">AceitesComestibles</button>
+				<button class="boton-encabezado-3-areas"><a href="#aceite-comestible" class="encabezado-3-areas-a">Aderezos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Arroz</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Frijol</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Consomé</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">CremaDeCacahuate</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">CremaParaCafé</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">PúreDeTomate</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">AlimentoParaBebé</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">AlimentoParaMascotas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Atole</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Avena</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Azúcar</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Café</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Cereales</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">ChilePiquín</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Especias</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">FlanEnPolvo</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">FórmulasInfantiles</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">GelatinasEnPolvo</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">HarinasPreparadas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Mole</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Sal</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">SalsasEnvasadas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Sazonadores</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">SopasEnSobre</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Cajeta</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Cátsup</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Mayonesa</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Mermelada</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Miel</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Té</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Vinagre</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Huevo</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Pasta</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Aceitunas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Champiñones</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Chicharos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Frijoles</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">FrutasEnAlmíbar</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Sardinas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">AtúnAgua/Aceite</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">ChilesEnLata</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">EnsaladasEnLata</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">GranosDeElote</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">SopaEnLata</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">VegetalesEnConserva</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">LecheCondensada/Evaporada</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Yogur</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">LecheEntera/Deslactosada/Light</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Crema/MediaCrema</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">LechePasteurizada/EnPolvo</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Mantequilla</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Margarina</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Queso</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Papitas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Palomitas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">FriturasDeMaíz</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Cacahuates</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">BotanasSaladas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">BarrasAlimenticias</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">NuecesYSemillas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Caramelos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">DulcesEnchilados</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">ChocolateDeMesa/EnPolvo</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">GomasDeMascar</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Mazapán</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Malvaviscos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">PulpaDeTamarindo</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">PastillasDeDulce</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">PaletasDeDulce</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">TortillasDeHarina/Maíz</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">GalletasDulces/Saladas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Pastelillos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">PanDeCaja/Dulce/Molido/Tostado</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">PanDulce</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Aguacate</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Ajo</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Cebolla</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Chile</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Cilantro/Perejil</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Jitomate</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Papas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Limones</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Manzanas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Naranjas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Plátanos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">AguaMineral/Natural/Saborizada</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">JarabesDeSabores</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Jugos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Naranjadas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">BebidasDeSoya/EnPolvo/Infantiles/Isotónicas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Energizantes</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Refrescos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">BebidasPreparadasConAlcohol</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Cerveza</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Anís</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Brandy</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Ginebra</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Mezcal</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Jerez</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Ron</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Tequila</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Sidra</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Whisky</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Vodka</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">SopasListasParaComer</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">SopasEnVaso</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">CarnesYEmbutidos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Salchichas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Mortadela</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Tocino</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Jamón</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Manteca</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Chorizo</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">CarneDePuerco/Res/Pollo</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">sueros</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">AguaOxigenada</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Preservativos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Alcohol</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Gasas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Analgésicos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Antigripales</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Antiácidos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">ToallasHumedas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">AceiteParaBebé</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">ToallasFemeninas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Algodón</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">TinteParaElCabello</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Biberones</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Talco</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">CepilloDeDientes</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Shampoo/Acondicionador</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Cotonetes</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Rastrillos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">CremaCorporal/Facial</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">PapelHigiénico</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">CremaParaAfeitar</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">PañuelosFacialesDesechables</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Dentífricos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">DesodoranteEnBarra/EnAerosol</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Maquillaje</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">EnjuagueBucal</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">LubricanteParaLabios</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Gel/Spray</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">LociónHidratante</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">JabonesCorporales</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">SuavizanteDeTelas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">ÁcidoMuriático</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a"></a>SosaCaústica</button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Aluminio</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Pilas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">ShampooParaRopa</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Servilletas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Servitoallas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Aromatizantes</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">CeraParaAutomóvil/Calzado</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">PastillasSanitarias</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">LimpiadoresLiquidos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Cerillos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Cloro/Blanqueador</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">JabónEnBarra</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Insecticidas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">FibrasLimpiadoras</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Desinfectantes</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">DetergenteParaTrastes/ParaRopa</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">PaletasDeHielo</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">helados</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Verduras/FrutasCongeladas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Hielo</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Velas/Veladoras</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">CepillosDePlástico</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">vasosDesechables</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">CintaAdhesiva</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Cucharas/Tenedores/CuchillosDePlastico</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Escobas/Trapeadores/Mechudos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">TrampasParaRatas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Extenciones/Multicontacto</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">RecogedorDeMetal/Plástico</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Popotes</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">PlatosDesechables</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Focos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Fusibles</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Jergas/Franelas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Matamoscas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Pegamento</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Mecate/Cuerda</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Hojas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Lápices</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Colores</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Libretas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">ÚtilesEscolaresEnGeneral</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">TarjetasTelefónicas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">Cigarrillos</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">TarjetasPrepagadas</a></button>
+				<button class="boton-encabezado-3-areas"><a href="#" class="encabezado-3-areas-a">GiftCards</a></button>
+
+		</div>
+		
+	</div>-->
+	
+</header>
+
+<body>
+	
+	
+
+<main class="content">
+	<h4 id="titulo-principal">Todos los productos</h4>
+		<div class="contenedor-imagenes" id="contenedor-imagenes">
+			<div class="platillo">
+				<div class="platillo-detalles">
+					<div class="imagen">
+						<img src="">
+					</div>
+					<div class="descripcion">
+						<p>Des: Aceite 123</p>
+						<p>Cont: 1L.</p>
+						<p>Cod:75020356078</p>
+						<p>Precio</p>
+					</div>
+
+					<div class="precio">
+						
+						<button class="boton-precio">$34.50</button>
+					</div>
+
+					<div class="agregar-carrito">
+						<button class="boton-agregar">Agregar Al Carrito</button>
+					</div>
+					
+				</div>
+				
+			</div>
+
+			<div class="platillo">
+				<div class="platillo-detalles">
+					<div class="imagen">
+						<img src="">
+					</div>
+					<div class="descripcion">
+						<p>Des: Aceite 123</p>
+						<p>Cont: 1L.</p>
+						<p>Cod:75020356078</p>
+						<p>Precio</p>
+					</div>
+
+					<div class="precio">
+						
+						<button class="boton-precio">$34.50</button>
+					</div>
+
+					<div class="agregar-carrito">
+						<button class="boton-agregar">Agregar Al Carrito</button>
+					</div>
+					
+				</div>
+				
+			</div>
+
+			<div class="platillo">
+				<div class="platillo-detalles">
+					<div class="imagen">
+						<img src="">
+					</div>
+					<div class="descripcion">
+						<p>Des: Aceite 123</p>
+						<p>Cont: 1L.</p>
+						<p>Cod:75020356078</p>
+						<p>Precio</p>
+					</div>
+
+					<div class="precio">
+						
+						<button class="boton-precio">$34.50</button>
+					</div>
+
+					<div class="agregar-carrito">
+						<button class="boton-agregar">Agregar Al Carrito</button>
+					</div>
+					
+				</div>
+				
+			</div>
+<!--esto se va a rellenar con .js-->
+		</div>
+
+</main>
+<footer>
+
+
+<!--
+	<div class="encabezado-barra-busqueda">
+		<input id="buscador" class="barra-busqueda" type="text" placeholder="¿Qué estas buscando?">
+	</div>
+-->	
+	
+	<div class="encabezado-2">
+		<div class="encabezado-2-direccion">
+			<a href="direccion.html" class="encabezado-2-direccion-a"><i class="fa-solid fa-location-dot encabezado-2-direccion-i"></i>DIRECCIÓN</a>
+		</div>
+		<div class="encabezado-2-contacto">
+			<a href="https://wa.me/message/WRQFKGUM5PNEA1" class="encabezado-2-contacto-a"><i class="fa-brands fa-whatsapp encabezado-2-contacto-i"></i>676-108-20-75</a>
+		</div>
+		<div class="encabezado-2-sobre-nosotros">
+			<a href="sobre-nosotros.html" class="encabezado-2-sobre-nosotros-a"><i class="fa-solid fa-people-group encabezado-2-sobre-nosotros-i"></i>SOBRE NOSOTROS</a>
+		</div>
+		
+	</div>
+
+	<p>© All In All Designs Todos Los Derechos Reservados</p>
+</footer>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
+
+<!--
+	<div class="boton-modal-envios">
+			<button class="btn-comprar-envios">
+			<label for="btn-modal-envios">
+				CONSULTA ENVÍOS GRATIS
+			</label>
+			</button>
+	</div>
+	-->

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		ModMoloch
+	</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="cerveza guadalupe victoria, caguamas guadalupe victoria, cheves guadalupe victoria, cerveza, modelorama moloch, moloch">
+	<meta name="description" content="Modelorama Moloch la cerveza mas fría de Guadalupe Victoria, ven y encuentra tu cerveza favorita ademas de que tenemos muchas ofertas para ti.">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<meta name="author" content="Jesús Fraire">
+	<meta name="copyright" content="Jesús Fraire">
+	<meta name="robots" content="index">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/390f0f7875.js" crossorigin="anonymous"></script>
+
+
+	<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+	<script src="jspdf.debug.js"></script>
+
+	<script src="html2pdf.bundle.min.js"></script>
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@900&family=Kablammo&display=swap" rel="stylesheet">
+</head>
+<header class="encabezado">
+	<div class="encabezado-superior">
+		<div class="encabezado-superior-inicio">
+			<a href="index.html"><i class="fa-solid fa-house encabezado-superior-inicio-i"></i></a>
+			<a href="https://jfraire23.github.io/all-in-all/"> <img src="AIA48X48.png"></a>
+		</div>
+		<div class="encabezado-superior-titulo">
+			<div>
+				<img class="logo-moloch" src="logo-moloch.jpg">
+			</div>
+			<h1>MOLOCH A.C.</h1>
+			<p class="sub"></p>
+		</div>
+		<div class="encabezado-superior-carrito">
+			<a class="boton-carrito" href="carrito.html">
+				<i class="fa-solid fa-cart-shopping encabezado-superior-carrito-i">
+					<div class="numero">
+						<span class="numero-carrito" id="numerito"></span>
+					</div>
+				</i>
+			</a>
+
+		</div>
+		
+	</div>
+
+	</div>
+
+	<div class="encabezado-2">
+		<div class="encabezado-2-direccion">
+			<a href="index.html" class="encabezado-2-direccion-a boton-volver"><i class="fa-solid fa-arrow-left"></i>SEGUIR COMPRANDO</a>
+		</div>
+	</div>
+
+	
+</header>
+<body id="pdf">
+	<main>
+		<h4 id="titulo-principal">Carrito</h4>
+			<div>
+				<form action="" method="post">
+  					<ul class="form-dir">
+					    <li class="form-dir-nombre">
+					      <p class="nombre">Nombre:</p>
+					      <input class="nombre-cliente" type="text" name="user_name" />
+					    </li>
+					    <li class="form-dir-direccion">
+					      <p class="direccion">Dirección de entrega:</p>
+					      <textarea class="direccion-cliente" name="direccion" rows="2"></textarea>
+					      
+					    </li>
+					</ul>
+				</form>
+			</div>
+		<div class="contenedor-carrito">
+			<p class="carrito-vacio" id="carrito-vacio">Tu Carrito Esta Vacío<i class="fa-regular fa-face-frown"></i></p>
+			<div class="carrito-platillos" id="carrito-platillos">
+				<div class="carrito-platillo disabled">
+					<img class="carrito-platillo-imagen" src="">
+					<div class="carrito-platillo-titulo">
+						<small>Titulo</small>
+						<h5>Nutrioli</h5>
+					</div>
+					<div class="carrito-platillo-cantidad">
+						<small>Cantidad</small>
+						<p>1</p>
+					</div>
+					<div class="carrito-platillo-precio">
+						<small>precio</small>
+						<p>$1000</p>
+					</div>
+					<div class="carrito-platillo-subtotal">
+						<small>Subtotal</small>
+						<p>$1000</p>
+					</div>
+					<button class="carrito-platillo-eliminar"><i class="fa-regular fa-trash-can"></i></button>
+				</div>
+
+				<div class="carrito-platillo disabled" id="carrito-platillos">
+					<img class="carrito-platillo-imagen" src="">
+					<div class="carrito-platillo-titulo">
+						<small>Titulo</small>
+						<h5>Nutrioli</h5>
+					</div>
+					<div class="carrito-platillo-cantidad">
+						<small>Cantidad</small>
+						<p>1</p>
+					</div>
+					<div class="carrito-platillo-precio">
+						<small>precio</small>
+						<p>$1000</p>
+					</div>
+					<div class="carrito-platillo-subtotal">
+						<small>Subtotal</small>
+						<p>$1000</p>
+					</div>
+					<button class="carrito-platillo-eliminar"><i class="fa-regular fa-trash-can"></i></button>
+				</div>
+
+				
+			</div>
+			<div class="carrito-acciones disabled" id="carrito-acciones">
+				<div class="datos-compra">
+					<div class="carrito-acciones-izquierda">
+						<button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar Carrito</button>
+					</div>
+
+					<div class="carrito-acciones-derecha">
+						<div class="carrito-acciones-total">
+							<p>Total:</p>
+							<p id="total">$3000</p>
+							
+						</div>
+						<a href="https://wa.me/message/WRQFKGUM5PNEA1" target="BLANK">
+						<button id="carrito-acciones-comprar" class="carrito-acciones-comprar">comprar ahora</button>
+						</a>
+					</div>
+				</div>	
+							
+			</div>
+			<p id="carrito-comprado" class="carrito-comprado disabled">Muchas Gracias Por Tu Compra<i class="fa-regular fa-face-smile-wink"></i></p>
+
+
+		</div>
+
+		<div class="envio">
+			Recuerda que pagas al recibir, el costo de envío es de $20. 
+		</div>
+
+		<div class="como-comprar">
+			 <p class="titulo-comprar">
+			 	Como Comprar en 3 Sencillos Pasos
+			 </p>
+			 <p class="text1">
+			 	1.- Si ya tienes agregados todos los productos que vas a pedir ahora solo agrega tu nombre y dirección de entrega en los recuadros.
+			 </p>	
+			 <p class="text2">	
+			 	2.- Toma captura de pantalla donde salgan los productos de tu pedido y el total. Nota:(Pueden ser varias capturas si en una no alcanzan a salir todos los productos).
+			 </p>
+			 <p class="text3">	
+			 	3.- Pulsa el botón comprar ahora el cual te enviará directamente al sitio oficial en WhatsApp donde solo mandas la o las capturas de tu pedido y listo! un asesor le dará seguimiento y estará en contacto contigo para cualquier duda o aclaración, recuerda que pagas en el momento que recibes.
+ 
+			 </p>
+			 <img src="">
+		</div>
+		
+	</main>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="carrito.js"></script>
+	
+</body>
+<footer>
+	<p>© All In All Designs Todos Los Derechos Reservados</p>
+</footer>
+</html>
