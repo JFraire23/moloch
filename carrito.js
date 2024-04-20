@@ -1,4 +1,4 @@
-const productosEnCarritoMoloch = JSON.parse(localStorage.getItem("platillos-cielito-lindo"));
+const productosEnCarritoMoloch = JSON.parse(localStorage.getItem("platillos-moloch"));
 console.log(productosEnCarritoMoloch);
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
 const contenedorCarritoPlatillos = document.querySelector("#carrito-platillos");
@@ -103,7 +103,7 @@ function eliminarDelCarrito(e){
 	productosEnCarritoMoloch.splice(index, 1);
 	cargarPlatillosCarrito();
 
-	localStorage.setItem("platillos-cielito-lindo", JSON.stringify(productosEnCarritoMoloch) );
+	localStorage.setItem("platillos-moloch", JSON.stringify(productosEnCarritoMoloch) );
 
 }
 
@@ -122,7 +122,7 @@ function vaciarCarrito(){
 		}).then((result) => {
   		if (result.isConfirmed) {
   			productosEnCarritoMoloch.length = 0;
-			localStorage.setItem("platillos-cielito-lindo", JSON.stringify(productosEnCarritoMoloch) );
+			localStorage.setItem("platillos-moloch", JSON.stringify(productosEnCarritoMoloch) );
 			cargarPlatillosCarrito();
     		Swal.fire({
       		title: "Borrado",
@@ -181,7 +181,7 @@ function borrarPorTiempo(){
 
 function vaciarCarrito2(){
 	productosEnCarritoMoloch.length = 0;
-	localStorage.setItem("platillos-cielito-lindo", JSON.stringify(productosEnCarritoMoloch) );
+	localStorage.setItem("platillos-moloch", JSON.stringify(productosEnCarritoMoloch) );
 	cargarPlatillosCarrito();
 }
 
