@@ -4156,7 +4156,7 @@ function actualizarBotonesAgregar(){
 }
 
 let productosEnCarritoMoloch;
-const productosEnCarritoMolochLS = JSON.parse(localStorage.getItem("platillos-cielito-lindo"));
+const productosEnCarritoMolochLS = JSON.parse(localStorage.getItem("platillos-moloch"));
 if (productosEnCarritoMolochLS) {
 	productosEnCarritoMoloch = productosEnCarritoMolochLS;
 	actualizarNumerito();
@@ -4198,7 +4198,7 @@ function agregarAlCarrito(e) {
 
 	actualizarNumerito();
 
-		localStorage.setItem("platillos-cielito-lindo", JSON.stringify(productosEnCarritoMoloch));
+		localStorage.setItem("platillos-moloch", JSON.stringify(productosEnCarritoMoloch));
 
 }
 
